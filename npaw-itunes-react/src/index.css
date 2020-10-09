@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  padding: 0em;
+  margin: 0em;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.search {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: #888;
+}
+input {
+  margin: 1em;
+}
+.albums {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+.albumsVertical {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.album {
+  padding: 0.5em;
+  text-align: left;
+  text-align: center;
+}
+.albumName {
+  font-size: 0.9em;
+}
+.artist {
+  font-size: 0.8em;
+  color: #444;
+}
+.pages {
+  display: inline-block;
+}
+.pages a {
+  margin-right: 1em;
+  text-decoration: none;
+}
+
+@media all and (max-width: 1024px) {
+  .albums {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media all and (max-width: 870px) {
+  .albums {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
